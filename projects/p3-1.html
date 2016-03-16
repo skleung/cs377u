@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 4">
+    <title>Project 3</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/hci.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <!-- 
+    Assignment template
+    ------------------
+    To create a new assignment:
+    1) Write all the HTML as you normally would underneath the #assignment-description div.
+    2) Anything that you want to appear in the navbar on the left needs to be enclosed
+        in a <div id="unique-id" class="sidenav-anchor">. On page load, hci.js will look up
+        anything enclosed in .sidenav-anchor, find the first header (h1-h6) inside it, and add
+        it to the navigation pane on the left. Make sure it has a unique div id so that there is something to anchor the hyperlink to.
+    3) I recommend going with Bootstrap's recommendation and putting any <table class="table"> elements enclosed in a
+        <div class="table-responsive">.
+    -->
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://hci.stanford.edu">Stanford HCI</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#calendar">Calendar</a></li>
+            <li><a href="../logistics.html">Logistics</a></li>           
+            <li><a href="../submit.html">Deliverables</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://piazza.com/class/i3ak156hiw060a">Questions</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="project container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidenav" data-spy="affix">
+                    <ul class="nav nav-stacked" id="sidenav-content">   
+                    </ul>
+                </div> <!-- /sidenav -->
+            </div> <!-- /col-md-3 -->  
+            <div class="col-md-9" id="assignment-description"> 
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1><a href="p3.html">Project 3: Design Sprint</a></h1>
+                        <h4 style="color: #888888">Part I</h4>
+                    </div>
+                </div>
+
+                <div id="team" class="sidenav-anchor">
+                    <h2>Form a team</h4>
+                    <p>Form a team of three from your studio. We suggest that you seek out teammates who bring together complementary skills and who have compatible schedules and priorities. If your studio cannot divide evenly into groups of three, talk to the studio staff about options. You are welcome to choose your own team, but for the best experience we recommend working with a different team than P2. You will stick with this team for the rest of the quarter, executing the final project across both P3 and P4.</p>
+
+                    <p>Once you've formed a team, make it official by registering it on <a href="https://docs.google.com/spreadsheets/d/1JfcdUp7fzmcHAUIolPGYciWC3_RvMhkoy4WrOW-0tXE/edit#gid=0">this Google Sheet </a><b>ASAP</b>.  Find your instructors' initials and write the full names of your team members in a blank row.</p>
+                </div>
+
+               <div id="plan" class="sidenav-anchor">
+                    <h2>Write a needfinding plan</h4>
+                    <p>You are welcome to choose any direction that fits within the studio theme. You may take ideas from lecture, or brainstorm your own. Remember that it may take some time to set up the interviews and the trip, so start early. We may be able to help connect you with relevant user groups. Look past the people and environments that are readily accessible: focus on opportunities that will teach us something. For example, if you're studying health, Vaden is nearby but doesn't give you new perspectives, so avoid it. To help your selection, identify relevant stakeholders — people directly involved or implicated in the activity. For example, if you are interested in elder care, potential stakeholders include the elderly being cared for, family members, and health care professionals.</p>
+
+                    <p>Decide on a needfinding plan, focusing on with whom and where you want to do your needfinding. Produce a shot list of your stakeholders, including how or where you might find them, interview them, and observe them. What do you hope to learn? Who will you talk to? What will you be sketching? This should be at least two solid paragraphs. The <a href="http://dschool.stanford.edu/wp-content/uploads/2011/03/BootcampBootleg2010v2SLIM.pdf">d.school bootcamp bootleg</a> has good ideas about different ways to frame your needfinding. Example helpful sections include interview preparation and extreme users.</p>
+
+                    <p>Next, put together a discussion guide of questions and topics to cover when you go out on your interviews. The discussion guide should record verbatim your introduction, the questions you are going to ask, what activities (if any) you are planning on doing with the participants, and (if any) survey questions you will be distributing over the web. The verbatim part is key because if you ask leading questions, the needfinding will be useless. The <a href="../readings/needfinding-patnaik.pdf.html">Asking Questions section in Patnaik</a> should help.</p>
+                
+                <p>You should have at least one interview per person on your team, but we ask you to do more. The more interviews you do, the more interesting insights you will find.</p>
+                </div>                    
+
+                <!--
+                <div id="observation" class="sidenav-anchor">
+                    <h2>Observation</h4>
+                    <p>Execute on your needfinding plan and gather your observations. Capture a mix of sketches, text, and when appropriate, photo and video.</p>
+
+                    <p>Compile your team's observations together into one PDF. Now, filter your raw materials into five pages of your most interesting observations that the course staff can look at, and copy them into another PDF, alongside a couple sentences each of explanation if you'd like. Bring these selections to studio.</p>
+
+                    <p>As part of your synthesis, generate three people profiles to capture different stakeholders or user groups. <a href="https://docs.google.com/document/d/1hBcZuyHrgmr3cjRwsgiKO3rwcz2z-xv963EBkSaDp3w/edit?usp=sharing">(See a template here that you can copy and edit for your submission.)</a> People profiles ensure that you have enough depth on a perspective from your conversations to tell a story. They help your results become more emotionally resonant.</p>                    
+
+                    <p>Next milestone will be to produce interpretations of these observations.</p>
+                </div>
+                -->
+
+                <div id="submit" class="sidenav-anchor">
+                    <h2>Submit</h2>
+
+                    <p>Pull everything together into your submission for P3.I on Canvas. This includes:</p>
+                    <ul>
+                        <li>A text file with your team members' names and SUNet IDs.</li>
+                        <li>A document detailing your topic of interest, your needfinding plan, and your discussion guide.</li>
+
+                        <!--
+                        <li>Your raw observations</li>
+                        <li>Your selected observations with explanations</li>
+                        <li>Your people profiles</li>
+                        -->
+                    </ul>
+                    <p> Have one of your group memebers submit these documents on Canvas. </p>
+                    <p>Be prepared to present your needfinding plan and discussion guide in studio in three to four minutes. Bring a printout of your needfinding plan and discussion guide with you to studio.</p>
+                    <!--
+                    <p>Bring a full-page color printout of 1) your selected observations and 2) your people profiles with you to studio.</p>
+                    -->
+                </div>                
+
+                <div id="evaluation" class="sidenav-anchor">
+                    <h2>Grading rubric</h2>
+                    <p>Each milestone is worth <b>five points</b>. You will receive five points for completing the assignment satisfactorily, submitting it, and your whole team bringing your deliverables to class for feedback.</p>
+                </div>
+
+            </div>            
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/hci.js"></script>
+  </body>
+</html>
